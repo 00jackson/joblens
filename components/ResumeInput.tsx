@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import type { SVGProps } from "react";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
@@ -13,7 +14,6 @@ type Props = {
 export default function ResumeInput({ onSubmit }: Props) {
   const [resume, setResume] = useState("");
   const [category, setCategory] = useState("any");
-  const [isFocused, setIsFocused] = useState(false);
 
   const handleClick = () => {
     if (resume.trim()) {
@@ -36,8 +36,6 @@ export default function ResumeInput({ onSubmit }: Props) {
             rows={8}
             value={resume}
             onChange={(e) => setResume(e.target.value)}
-            onFocus={() => setIsFocused(true)}
-            onBlur={() => setIsFocused(false)}
             className="min-h-[220px] w-full bg-white/90 backdrop-blur-sm border-gray-200/80 focus:border-transparent focus:ring-2 focus:ring-blue-300/50 shadow-lg transition-all duration-200 rounded-xl"
           />
         </div>
@@ -136,7 +134,7 @@ export default function ResumeInput({ onSubmit }: Props) {
 }
 
 // Icon components (add these above the main component)
-function GlobeIcon(props: any) {
+function GlobeIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor">
       <path d="M12 2a10 10 0 1 0 10 10 4 10 0 0 0-10-10zm0 0v8m0 0a2 2 0 1 0 2 2" />
@@ -144,7 +142,7 @@ function GlobeIcon(props: any) {
   );
 }
 
-function CodeIcon(props: any) {
+function CodeIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor">
       <path d="m16 18 6-6-6-6M8 6l-6 6 6 6" />
@@ -152,7 +150,7 @@ function CodeIcon(props: any) {
   );
 }
 
-function ServerIcon(props: any) {
+function ServerIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor">
       <rect x="2" y="2" width="20" height="8" rx="2" />
@@ -163,7 +161,7 @@ function ServerIcon(props: any) {
   );
 }
 
-function DatabaseIcon(props: any) {
+function DatabaseIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor">
       <ellipse cx="12" cy="5" rx="9" ry="3" />
@@ -173,7 +171,7 @@ function DatabaseIcon(props: any) {
   );
 }
 
-function PaletteIcon(props: any) {
+function PaletteIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor">
       <circle cx="13.5" cy="6.5" r=".5" />
@@ -185,7 +183,7 @@ function PaletteIcon(props: any) {
   );
 }
 
-function LayoutIcon(props: any) {
+function LayoutIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg {...props} viewBox="0 0 24 24" fill="none" stroke="currentColor">
       <rect x="3" y="3" width="18" height="18" rx="2" />

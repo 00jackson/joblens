@@ -41,7 +41,7 @@ export default function Home() {
             <Rocket className="w-8 h-8 text-purple-500" />
           </h1>
           <p className="text-lg text-gray-600 font-medium">
-            Paste your resume and let's find your <span className="text-purple-600">dream job</span> ✨
+            Paste your resume and let&rsquo;s find your <span className="text-purple-600">dream job</span>
           </p>
         </div>
 
@@ -99,7 +99,7 @@ export default function Home() {
                     className="w-full py-3 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white rounded-lg font-medium transition-all flex items-center justify-center gap-2 shadow-md hover:shadow-lg"
                   >
                     <Search className="w-5 h-5" />
-                    Let's explore more
+                    Let&rsquo;s explore more
                   </button>
                 </div>
               </div>
@@ -203,7 +203,7 @@ export default function Home() {
 
         {/* Playful Footer */}
         <footer className="mt-16 pt-8 border-t-2 border-purple-100 text-center text-sm text-gray-500">
-          <p>Made with ✨ for Gen Z job seekers</p>
+          <p>Made with 💖 for Gen Z job seekers</p>
           <p className="mt-1">© {new Date().getFullYear()} JobLens • All rights reserved</p>
         </footer>
       </div>
