@@ -111,10 +111,10 @@ export default function Home() {
         {history.length > 0 && (
           <div className="mt-14">
             <div className="flex justify-between items-center mb-6">
-              <h3 className="text-2xl font-bold text-gray-800 flex items-center gap-3">
-                <Clock className="w-6 h-6 text-purple-500" />
+              <h4 className="text-2xl font-bold text-gray-800 flex items-center gap-3">
+                <Clock className="w-4 h-4 text-purple-500" />
                 Your Match History
-              </h3>
+              </h4>
               <button 
                 onClick={clearHistory}
                 className="text-sm font-medium text-pink-500 hover:text-pink-600 flex items-center gap-1 transition-colors"
