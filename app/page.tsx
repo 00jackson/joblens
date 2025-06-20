@@ -35,7 +35,7 @@ export default function Home() {
     <main className="min-h-screen bg-gradient-to-br from-purple-50 to-amber-50">
       <div className="max-w-4xl mx-auto px-4 py-8 sm:py-12">
         {/* Header with retro-modern vibe */}
-        <div className="mb-10 text-center">
+        <div className="mb-7 text-center">
           <h1 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-500 mb-3 flex items-center justify-center gap-3">
             JobLens
             <Rocket className="w-8 h-8 text-purple-500" />
@@ -109,10 +109,10 @@ export default function Home() {
 
         {/* History Section with "View All" interaction */}
         {history.length > 0 && (
-          <div className="mt-14">
-            <div className="flex justify-between items-center mb-6">
+          <div className="mt-8">
+            <div className="flex justify-between items-center mb-5">
               <h4 className="text-2xl font-bold text-gray-800 flex items-center gap-3">
-                <Clock className="w-4 h-4 text-purple-500" />
+                <Clock className="w-6 h-6 text-purple-500 mt-1 ml-2" />
                 Your Match History
               </h4>
               <button 
